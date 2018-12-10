@@ -156,7 +156,6 @@ object OfflineApp {
 
     import sparkSession.implicits._
     val rdd: RDD[UserVisitAction] = sparkSession.sql(sql.toString()).as[UserVisitAction].rdd
-
     rdd
   }
 }
